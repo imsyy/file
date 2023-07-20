@@ -1,0 +1,234 @@
+body {
+  overflow-y: overlay !important;
+  overflow-x: hidden !important;
+  padding-right: 0 !important;
+  font-family: HarmonyOS_Regular, sans-serif !important;
+  background-attachment: fixed;
+  // 自定义明暗
+  &.hope-ui-light {
+    // 自定义颜色
+    --custom-fontColor: #11181c;
+    --custom-backgroundColor: rgb(255 255 255 / 50%);
+    --custom-backgroundColor-grey: #ffffff;
+    --custom-backgroundColor-border: #eceff2;
+    --custom-backgroundColor-transl: #f4f4f4bf;
+    --custom-btnBackgroundColor: #eceff2;
+    // 自定义背景图片
+    background-image: url("https://s1.ax1x.com/2023/06/28/pCdBqLd.png");
+  }
+  &.hope-ui-dark {
+    --custom-fontColor: #ecedee;
+    --custom-backgroundColor: rgb(32 36 37 / 70%);
+    --custom-backgroundColor-grey: #202425;
+    --custom-backgroundColor-border: #2d3235;
+    --custom-backgroundColor-transl: #080808f2;
+    --custom-btnBackgroundColor: #3a3f42;
+    background-image: url("https://s1.ax1x.com/2023/06/28/pCdBbsH.png");
+  }
+  #root {
+    // 页头
+    .header {
+      top: 0;
+      z-index: 999;
+      position: sticky;
+      height: 60px;
+      box-shadow: var(--hope-shadows-md);
+      background-color: var(--custom-backgroundColor);
+      backdrop-filter: blur(20px);
+      .header-left {
+        display: none;
+      }
+      .header-left-custom {
+        height: 100%;
+        .left-all {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .hope-image {
+            height: 30px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            &:hover {
+              transform: scale(1.08);
+            }
+            &:active {
+              transform: scale(1);
+            }
+          }
+          .name {
+            font-weight: bold;
+            font-size: 20px;
+          }
+        }
+      }
+      .header-right {
+        .hope-stack {
+          &.hope-c-PJLV {
+            height: 2rem;
+            .hope-icon {
+              height: 0.8em;
+              width: 0.8em;
+            }
+            .hope-kbd {
+              font-size: 0.6em;
+            }
+          }
+        }
+      }
+    }
+    // 内容
+    .body {
+      &.hope-stack {
+        // 面包屑导航
+        nav {
+          width: 100%;
+        }
+        // 文件列表
+        .obj-box {
+          width: 100%;
+        }
+        // MarkDown
+        .markdown-body {
+          font-family: HarmonyOS_Regular, sans-serif !important;
+          blockquote {
+            & > :last-child {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    // 页脚
+    .custom-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 12px;
+        a {
+          display: block;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 8px;
+        }
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+        .num {
+          opacity: 0.8;
+          font-size: 14px;
+        }
+        .power {
+          margin: 2px 0;
+        }
+      }
+    }
+    // 评论区
+    #Comments {
+      --at-color-main: #1890ff;
+      --at-color-font: var(--custom-fontColor);
+      --at-color-deep: var(--custom-fontColor);
+      --at-color-bg: var(--custom-backgroundColor);
+      --at-color-border: var(--custom-backgroundColor-border);
+      --at-color-bg-grey: var(--custom-btnBackgroundColor);
+      --at-color-bg-transl: var(--custom-backgroundColor-grey);
+      --at-color-bg-grey-transl: var(--custom-backgroundColor-transl);
+      .atk-main-editor {
+        .atk-bottom {
+          padding: 5px 0 0 10px;
+          .atk-item {
+            &:nth-of-type(1) {
+              margin-bottom: 5px;
+            }
+            &:nth-of-type(2) {
+              .atk-send-btn {
+                height: 36px;
+                border-radius: 6px;
+              }
+            }
+          }
+        }
+      }
+      .atk-list {
+        .atk-list-header {
+          .atk-dropdown {
+            background-color: var(--hope-colors-neutral3);
+          }
+        }
+      }
+    }
+    // 页脚
+    .footer {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      justify-content: center;
+    }
+  }
+  // 弹窗
+  .hope-modal__overlay {
+    backdrop-filter: blur(12px);
+  }
+  // 抽屉
+  .hope-drawer__overlay {
+    backdrop-filter: blur(12px);
+  }
+}
+
+// 图标
+.fa-solid {
+  margin: 0 6px;
+  &.fa-message {
+    margin: 0 6px 0 0;
+    transform: translateY(1px);
+  }
+}
+
+// 侧边栏
+.left-toolbar-box {
+  right: 0 !important;
+  min-height: 6rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  &:hover {
+    .left-toolbar,
+    svg:first-of-type {
+      transform: translateX(0px) !important;
+    }
+  }
+  .left-toolbar,
+  svg:first-of-type {
+    transform: translateX(70px) !important;
+    transition: transform 0.3s;
+    max-width: 40px;
+  }
+}
+
+// 禁止选中
+* {
+  user-select: none;
+}
+
+// 滚动条
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 6px !important;
+  background-color: #747474 !important;
+  &:hover {
+    background-color: #202425 !important;
+  }
+}

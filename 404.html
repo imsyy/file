@@ -1,433 +1,221 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <title>错误 - 無名の文件库</title>
-    <link rel="shortcut icon"
-        href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlo89/56ZQ/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACUjDu1lo89/6mhTP+zrVP/nplD/5+aRK8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHNiIS6Wjz3/ubFY/761W/+vp1D/urRZ/8vDZf/GvmH/nplD/1BNIm8AAAAAAAAAAAAAAAAAAAAAAAAAAJaPPf+knEj/vrVb/761W/++tVv/r6dQ/7q0Wf/Lw2X/y8Nl/8vDZf+tpk7/nplD/wAAAAAAAAAAAAAAAJaPPf+2rVX/vrVb/761W/++tVv/vrVb/6+nUP+6tFn/y8Nl/8vDZf/Lw2X/y8Nl/8G6Xv+emUP/AAAAAAAAAACWjz3/vrVb/761W/++tVv/vrVb/761W/+vp1D/urRZ/8vDZf/Lw2X/y8Nl/8vDZf/Lw2X/nplD/wAAAAAAAAAAlo89/761W/++tVv/vrVb/761W/++tVv/r6dQ/7q0Wf/Lw2X/y8Nl/8vDZf/Lw2X/y8Nl/56ZQ/8AAAAAAAAAAJaPPf++tVv/vrVb/761W/++tVv/vbRa/5aPPf+emUP/y8Nl/8vDZf/Lw2X/y8Nl/8vDZf+emUP/AAAAAAAAAACWjz3/vrVb/761W/++tVv/vrVb/5qTQP+inkb/op5G/6KdRv/Lw2X/y8Nl/8vDZf/Lw2X/nplD/wAAAAAAAAAAlo89/761W/++tVv/sqlS/56ZQ//LxWb/0Mlp/9DJaf/Kw2X/oJtE/7+3XP/Lw2X/y8Nl/56ZQ/8AAAAAAAAAAJaPPf+9tFr/mJE+/7GsUv/Rymr/0cpq/9HKav/Rymr/0cpq/9HKav+xrFL/nplD/8vDZf+emUP/AAAAAAAAAACWjz3/op5G/9HKav/Rymr/0cpq/9HKav/Rymr/0cpq/9HKav/Rymr/0cpq/9HKav+inkb/nplD/wAAAAAAAAAAAAAAAKKeRv+3slb/0cpq/9HKav/Rymr/0cpq/9HKav/Rymr/0cpq/9HKav+1sFX/op5G/wAAAAAAAAAAAAAAAAAAAAAAAAAAop5GUKKeRv/Nxmf/0cpq/9HKav/Rymr/0cpq/83GZ/+inkb/op5GSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAop5G16KeRv/LxWb/y8Vm/6KeRv+inkaPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAop5G/6KeRtcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/n8AAPgfAADwDwAAwAMAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAwAMAAPAPAAD4HwAA/n8AAA==">
-    <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/font-awesome/6.0.0/css/all.min.css"
-        media="all">
-    <noscript>
-        <div class="kill-noscript">
-            <h1><b>抱歉，您的浏览器无法访问本站</b></h1>
-            <h3>本页面需要浏览器支持（启用）JavaScript</h3><br> <a target="_blank" rel="noopener"
-                href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情</strong></a>
-        </div>
-    </noscript>
-    <style>
-        html {
-            overflow-x: hidden !important;
-            overflow-y: hidden !important
-        }
+  <meta charset="utf-8" />
+  <title>错误 - 無名の文件库</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    :root {
+      --text-color: #000;
+      --text-color-gray: #888;
+      --text-color-hover: #fff;
+      --icon-color: #444;
+    }
 
-        .kill-noscript {
-            text-align: center;
-            height: 100%;
-            margin-top: 15%;
-            margin-bottom: 5500%
-        }
+    html.dark-mode {
+      --text-color: #fff;
+      --text-color-gray: #888;
+      --text-color-hover: #3c3c3c;
+      --icon-color: #cbcbcb;
+    }
 
-        .content,
-        .footer {
-            text-align: center
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      -webkit-user-select: none;
+      user-select: none;
+    }
 
-        button,
-        html {
-            font-family: var(--main-font)
-        }
+    html {
+      height: 100%;
+    }
 
-        :root {
-            --bg-anim-main-color: rgba(35, 157, 218, 0.6);
-            --bg-anim-alt-color: rgba(35, 157, 218, 0.1);
-            --main-color: #000;
-            --text-color: #888;
-            --link-color: #444;
-            --inverse-color: #fff;
-            --main-font: 'PingFang SC', "Open Sans", 'Microsoft YaHei', sans-serif;
-            font-size: 16px
-        }
+    body {
+      background-color: var(--text-color-hover);
+      color: var(--text-color);
+      font-family: "PingFang SC", "Open Sans", "Microsoft YaHei", sans-serif;
+      transition: background-color 0.5s, color 0.5s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
 
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --main-color: #FFF;
-                --text-color: #888;
-                --link-color: #CCC;
-                --inverse-color: #000
-            }
+    .dark-mode body {
+      background-color: #2a2a2a;
+    }
 
-            .field {
-                background: #111;
-                transition: all .5s ease
-            }
-        }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
 
-        html {
-            color: var(--text-color)
-        }
+    a {
+      text-decoration: none;
+      color: var(--text-color-gray);
+      transition: all 0.5s ease;
+    }
 
-        body {
-            margin: 0;
-            width: 100%
-        }
+    a:hover {
+      color: var(--text-color);
+    }
 
-        a {
-            text-decoration: none;
-            color: var(--link-color);
-            outline: 0
-        }
+    .ico {
+      margin: 4rem 2rem;
+      font-size: 8rem;
+      color: var(--text-color-gray);
+    }
 
-        i.fa-solid.fa-circle-exclamation {
-            height: 10rem;
-            width: 10rem;
-            margin: 2rem;
-            font-size: 10rem;
-        }
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+    }
 
-        .icon {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    .tip {
+      padding: 8px 12px;
+      background-color: var(--text-color-gray);
+      color: var(--text-color-hover);
+      border-radius: 8px;
+      font-size: 14px;
+    }
 
-        .title {
-            font-size: 2rem;
-            font-weight: bold;
-        }
+    .text {
+      margin: 1rem;
+    }
 
-        .wrapper {
-            position: relative;
-            display: flex;
-            width: 100%;
-            max-width: 1080px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 90vh;
-            box-sizing: border-box
-        }
+    .control button {
+      background-color: var(--text-color-hover);
+      border: var(--text-color) solid;
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      transition: all 0.5s ease;
+      margin: 1rem 0.2rem;
+      color: var(--text-color);
+      cursor: pointer;
+    }
 
-        .field,
-        .footer {
-            position: fixed;
-            width: 100%
-        }
+    .control button:hover {
+      border: var(--text-color) solid;
+      background: var(--text-color);
+      color: var(--text-color-hover);
+    }
 
-        .content {
-            color: var(--main-color)
-        }
+    .control button i {
+      margin-right: 6px;
+    }
 
-        .content h5 {
-            color: var(--text-color)
-        }
+    footer {
+      line-height: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 140px;
+    }
 
-        .content h2 {
-            margin: 0 1em
-        }
+    footer .social {
+      color: var(--icon-color);
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
 
-        .footer {
-            bottom: 2rem;
-            font-size: 95%;
-            margin: 0 auto;
-            line-height: 1.75rem;
-        }
+    footer .social i {
+      margin: 0 12px;
+    }
 
-        .iziToast-message.slideIn {
-            margin-top: 5px !important;
-        }
+    footer .point::before {
+      content: "·";
+      color: var(--text-color-gray);
+    }
 
-        .iziToast:after {
-            box-shadow: none !important;
-        }
-
-        .iziToast {
-            border-radius: 5px !important;
-        }
-
-        a.social {
-            margin-left: 0.5rem;
-            margin-right: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        button {
-            border: var(--main-color) solid;
-            border-radius: 4px;
-            padding: .5rem 1rem;
-            font-size: 1rem;
-            background: 0 0;
-            transition: all .5s ease;
-            margin: 1rem 0;
-            color: var(--main-color)
-        }
-
-        button i {
-            margin-right: 1rem
-        }
-
-        button:hover {
-            border: var(--main-color) solid;
-            background: var(--main-color);
-            color: var(--inverse-color);
-            transition: all .5s ease
-        }
-
-        @media screen and (max-width: 980px) {
-            :root {
-                font-size: 16px
-            }
-        }
-
-        .field {
-            height: 100%;
-            transition: all .5s ease
-        }
-
-        .item1,
-        .item2,
-        .item3 {
-            display: block;
-            background-color: rgb(136 136 136 / 51%);
-            position: absolute;
-            top: 105vh
-        }
-
-        .item1 {
-            width: 25px;
-            height: 25px
-        }
-
-        .item2 {
-            width: 15px;
-            height: 15px
-        }
-
-        .item3 {
-            width: 8px;
-            height: 8px
-        }
-
-        @keyframes shake {
-
-            0%,
-            100% {
-                transform: translateX(10px)
-            }
-
-            50% {
-                transform: translateX(-10px)
-            }
-        }
-
-        @-webkit-keyframes shake {
-
-            0%,
-            100% {
-                -webkit-transform: translateX(10px)
-            }
-
-            50% {
-                -webkit-transform: translateX(-10px)
-            }
-        }
-
-        .shake {
-            animation: shake 2s ease 0s infinite normal;
-            -webkit-animation: shake 2s ease 0s infinite normal
-        }
-
-        @keyframes move {
-            0% {
-                transform: translateY(0)
-            }
-
-            100% {
-                transform: translateY(-100vh);
-                opacity: 0
-            }
-        }
-
-        @-webkit-keyframes move {
-            0% {
-                -webkit-transform: translateY(0)
-            }
-
-            100% {
-                -webkit-transform: translateY(-100vh);
-                opacity: 0
-            }
-        }
-
-        .field div:nth-child(1) {
-            -webkit-animation: move ease-in infinite;
-            animation: move ease-in infinite;
-            -webkit-animation-delay: 2.7s;
-            animation-delay: 2.7s;
-            -webkit-animation-duration: 6.5s;
-            animation-duration: 6.5s;
-            left: calc(50% + 27 * 1vw)
-        }
-
-        .field div:nth-child(2) {
-            -webkit-animation: move ease-in infinite;
-            animation: move ease-in infinite;
-            -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s;
-            -webkit-animation-duration: 6.1s;
-            animation-duration: 6.1s;
-            left: calc(50% + -30 * 1vw)
-        }
-
-        .field div:nth-child(3) {
-            -webkit-animation: move ease-in infinite;
-            animation: move ease-in infinite;
-            -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s;
-            -webkit-animation-duration: 7.9s;
-            animation-duration: 7.9s;
-            left: calc(50% + -17 * 1vw)
-        }
-
-        .field div:nth-child(4) {
-            -webkit-animation: move ease-in infinite;
-            animation: move ease-in infinite;
-            -webkit-animation-delay: 3s;
-            animation-delay: 3s;
-            -webkit-animation-duration: 10.8s;
-            animation-duration: 10.8s;
-            left: calc(50% + 1 * 1vw)
-        }
-
-        .field div:nth-child(5) {
-            -webkit-animation: move ease-in infinite;
-            animation: move ease-in infinite;
-            -webkit-animation-delay: .5s;
-            animation-delay: .5s;
-            -webkit-animation-duration: 9.5s;
-            animation-duration: 9.5s;
-            left: calc(50% + 32 * 1vw)
-        }
-
-        .field div:nth-child(6) {
-            -webkit-animation: move ease-in infinite;
-            animation: move ease-in infinite;
-            -webkit-animation-delay: .9s;
-            animation-delay: .9s;
-            -webkit-animation-duration: 14.7s;
-            animation-duration: 14.7s;
-            left: calc(50% + 43 * 1vw)
-        }
-
-        .field div:nth-child(7) {
-            -webkit-animation: move ease-in infinite;
-            animation: move ease-in infinite;
-            -webkit-animation-delay: 1.7s;
-            animation-delay: 1.7s;
-            -webkit-animation-duration: 23s;
-            animation-duration: 23s;
-            left: calc(50% + 34 * 1vw)
-        }
-
-        .field div:nth-child(8) {
-            -webkit-animation: move ease-in infinite;
-            animation: move ease-in infinite;
-            -webkit-animation-delay: 2.3s;
-            animation-delay: 2.3s;
-            -webkit-animation-duration: 12.6s;
-            animation-duration: 12.6s;
-            left: calc(50% + 12 * 1vw)
-        }
-
-        .field div:nth-child(9) {
-            -webkit-animation: move ease-in infinite;
-            animation: move ease-in infinite;
-            -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-            -webkit-animation-duration: 9.2s;
-            animation-duration: 9.2s;
-            left: calc(50% + 3 * 1vw)
-        }
-
-        .field div:nth-child(10) {
-            -webkit-animation: move ease-in infinite;
-            animation: move ease-in infinite;
-            -webkit-animation-delay: 2.8s;
-            animation-delay: 2.8s;
-            -webkit-animation-duration: 20.8s;
-            animation-duration: 20.8s;
-            left: calc(50% + -14 * 1vw)
-        }
-
-        .field div:nth-child(11) {
-            -webkit-animation: move ease-in infinite;
-            animation: move ease-in infinite;
-            -webkit-animation-delay: 2.3s;
-            animation-delay: 2.3s;
-            -webkit-animation-duration: 16s;
-            animation-duration: 16s;
-            left: calc(50% + -45 * 1vw)
-        }
-
-        .field div:nth-child(12) {
-            -webkit-animation: move ease-in infinite;
-            animation: move ease-in infinite;
-            -webkit-animation-delay: 1.2s;
-            animation-delay: 1.2s;
-            -webkit-animation-duration: 8.4s;
-            animation-duration: 8.4s;
-            left: calc(50% + -6 * 1vw)
-        }
-
-        .field div:nth-child(2n),
-        .field div:nth-child(7) {
-            background-color: rgb(207 207 207 / 17%);
-        }
-    </style>
+    .power,
+    .icp {
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="field">
-        <div class="item1 shake"></div>
-        <div class="item2 shake"></div>
-        <div class="item3 shake"></div>
-        <div class="item1 shake"></div>
-        <div class="item2 shake"></div>
-        <div class="item1 shake"></div>
-        <div class="item1 shake"></div>
-        <div class="item2 shake"></div>
-        <div class="item3 shake"></div>
-        <div class="item1 shake"></div>
-        <div class="item2 shake"></div>
-        <div class="item3 shake"></div>
+  <main>
+    <div class="ico"><i class="fa-solid fa-circle-exclamation"></i></div>
+    <div class="title">無名の文件库</div>
+    <div class="text">您好像输入了错误的地址</div>
+    <!-- <div class="tip">本服务已开启防跨站请求</div> -->
+    <div class="control">
+      <button onclick="clickFunction()">
+        <i class="fa-solid fa-rotate-left"></i>
+        <span>回到首页</span>
+      </button>
+      <!-- <button onclick="window.open(`https://binaryify.github.io/NeteaseCloudMusicApi/`)">
+        <i class="fa-solid fa-book"></i>
+        <span>接口文档</span>
+      </button> -->
     </div>
-    <div class="wrapper">
-        <div class="icon"><i class="fa-solid fa-circle-exclamation"></i>
-            <div class="content">
-                <p class="title">無名の文件库</p>
-                <p class="text">您好像输入了错误的地址</p>
-            </div><button onclick="window.location.href='https://file.imsyy.top/'"><i
-                    class="fa-solid fa-house"></i>回到主页</button>
-        </div>
-        <div class="footer">
-            <span>
-                <a class="social" href="https://github.com/imsyy/" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a> · <a class="social" href="https://blog.imsyy.top/" target="_blank">
-                    <i class="fa-solid fa-blog"></i>
-                </a> · <a class="social" href="mailto:one@imsyy.top" target="_blank">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-            </span><br>
-            <span>Copyright © 2020
-                <script>
-                    document.write(' - ' + (new Date()).getFullYear())
-                </script> <a href="https://imsyy.top/" target="_blank">無名</a>
-            </span>
-        </div>
+  </main>
+  <footer>
+    <div class="social">
+      <i class="fa-brands fa-github" onclick="socialJump('github')"></i>
+      <div class="point"></div>
+      <i class="fa-solid fa-house" onclick="socialJump('home')"></i>
+      <div class="point"></div>
+      <i class="fa-solid fa-envelope" onclick="socialJump('email')"></i>
+    </div>
+    <div class="power">
+      Copyright ©
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      <a href="https://www.imsyy.top/" target="_blank">imsyy</a>
+    </div>
+    <div class="icp">
+      <a href="https://beian.miit.gov.cn/" target="_blank">豫ICP备2022018134号-1</a>
+    </div>
+  </footer>
+  <script>
+    // 跟随系统主题
+    const darkModeMediaQuery = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    );
+    const toggleDarkMode = (darkModeMediaQuery) => {
+      if (darkModeMediaQuery.matches) {
+        document.documentElement.classList.add("dark-mode");
+      } else {
+        document.documentElement.classList.remove("dark-mode");
+      }
+    };
+    darkModeMediaQuery.addListener(toggleDarkMode);
+    toggleDarkMode(darkModeMediaQuery);
+
+    // 按钮事件
+    const clickFunction = () => {
+      window.location.href = "/";
+    };
+
+    // 社交链接跳转
+    const socialJump = (type) => {
+      switch (type) {
+        case "github":
+          window.location.href = "https://github.com/imsyy/";
+          break;
+        case "home":
+          window.location.href = "https://www.imsyy.top/";
+          break;
+        case "email":
+          window.location.href = "mailto:one@imsyy.top";
+          break;
+        default:
+          break;
+      }
+    };
+  </script>
 </body>
 
 </html>
